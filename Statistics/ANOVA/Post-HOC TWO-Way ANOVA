@@ -1,0 +1,29 @@
+# To clean up the data, it needs to be re-ran to further fed into the sorting code:
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
+
+# RE-RUN THIS FIRST
+tukey = pairwise_tukeyhsd(endog=df_anova['Average_ED_visits'],
+                          groups=df_anova['combined'],
+                          alpha=0.05)# Cleaning up the data:
+
+import pandas as pd
+tukey_df = pd.DataFrame(data=tukey.summary().data[1:], columns=tukey.summary().data[0])
+
+
+# Filter for only significant results:
+significant_results = tukey_df[tukey_df['reject']== True].sort_values(by='meandiff', ascending=False)
+
+print(significant_results.head(20))
+
+
+
+
+
+
+
+
+
+
+
+no_infants = significant_results[significant_results['group2'].str.contains('Infants')]
+print(no_infants.head(10))
