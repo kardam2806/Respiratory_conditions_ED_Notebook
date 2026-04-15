@@ -1,0 +1,53 @@
+# Melt the dataframe into long format:
+
+df_anova = pd.melt(df, id_vars=['week_end', 'age_group'],
+                    var_name='Condition',
+                    value_name='Average ED visits per weekend')
+
+# Fill the missing age groups removing NaN:
+
+# This turns the NaNs into "Adults 18-49" for all relevant rows
+df_anova['age_group'] = df_anova['age_group'].ffill()
+
+# Ensure there are no leftover NaNs in the numeric column
+df_anova = df_anova.dropna(subset=['Average ED visits per weekend'])
+
+
+df_anova.head()
+
+
+
+import pandas as pd
+import scipy.stats as stats
+
+groups = [group['Average ED visits per weekend'].values for name, group in df_anova.groupby('age_group')]
+
+f_stat, p_val = stats.f_oneway(*groups)
+
+print(f"One-Way ANOVA Results: F={f_stat:.4f}, p_value={p_val:.4e}")
+
+
+
+
+
+
+# 1. List ALL columns that are NOT respiratory illnesses in id_vars
+# This prevents 'Year', 'age_min', etc., from being mixed into the percentages
+df_anova = pd.melt(df,
+                    id_vars=['week_end', 'age_group', 'Year'],
+                    var_name='Condition',
+                    value_name='Average_ED_visits')
+
+# 2. Clean up: Remove the 'Overall' group
+# (You shouldn't compare 'Overall' against specific groups in ANOVA as it's a duplicate of their data)
+df_anova = df_anova[df_anova['age_group'] != 'Overall']
+
+# 3. Fill and drop as before
+df_anova['age_group'] = df_anova['age_group'].ffill()
+df_anova = df_anova.dropna(subset=['Average_ED_visits'])
+
+# 4. Re-run the ANOVA
+groups = [group['Average_ED_visits'].values for name, group in df_anova.groupby('age_group')]
+f_stat, p_val = stats.f_oneway(*groups)
+
+print(f"New ANOVA Result: F={f_stat:.4f}, p-value={p_val:.4e}")
