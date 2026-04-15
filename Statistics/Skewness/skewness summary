@@ -1,0 +1,10 @@
+Condition
+Acute upper respiratory infection       0.963527
+Bronchiolitis                           2.270779
+Bronchitis                             -0.206889
+Croup                                   1.179044
+Pneumonia                               1.404121
+Sinus infection                        -0.582444
+Sore throat (including strep throat)    1.249994
+Tonsillitis                             0.634745
+dtype: float64
