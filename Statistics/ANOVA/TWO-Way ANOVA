@@ -1,0 +1,12 @@
+# To perform Two-Way ANOVA using Age group and Condition for ED visits:
+
+import pandas as pd
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+
+model = ols('Q("Average_ED_visits") ~ C(age_group) * C(Condition)', data=df_anova).fit()
+
+# Peform Two-Way ANOVA:
+anova_table = sm.stats.anova_lm(model, typ=2)
+
+print(anova_table)
