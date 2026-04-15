@@ -1,0 +1,48 @@
+df_age['age_group_encoded'] = df_age['age_group'].astype('category').cat.codes
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Set the style:
+sns.set_style("whitegrid")
+
+# Defining the age labels:
+age_labels = ['Infants 0-1', 'Kids 2-4', 'Kids 5-17','Adults 18-49', 'Adults 50-64', 'Seniors 65+', 'Overall']
+
+# Create the regression plot:
+plt.figure(figsize=(10, 6))
+sns.regplot(x='age_group_encoded', y='Acute upper respiratory infection', data=df_age,
+            logx=True,
+            scatter_kws={'s': 100, 'alpha': 0.6},
+            line_kws={'color': 'red'})
+
+plt.xlabel('Age Group (Encoded)')
+plt.xticks(ticks=range(7), labels= age_labels)
+plt.ylabel('Acute Upper Respiratory Infection')
+plt.title('Regression Plot of Age Group vs. Acute Upper Respiratory Infection')
+
+
+
+
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Set the style:
+sns.set_style("whitegrid")
+
+# Defining the age labels:
+age_labels = ['Infants 0-1', 'Kids 2-4', 'Kids 5-17','Adults 18-49', 'Adults 50-64', 'Seniors 65+', 'Overall']
+
+# Create the regression plot:
+plt.figure(figsize=(10, 6))
+sns.regplot(x='age_group_encoded', y='Bronchiolitis', data=df_age,
+            logx=True,
+            scatter_kws={'s': 100, 'alpha': 0.6},
+            line_kws={'color': 'red'})
+
+plt.xlabel('Age Group (Encoded)')
+plt.xticks(ticks=range(7), labels= age_labels)
+plt.ylabel('Bronchiolitis')
+plt.title('Regression Plot of Age Group vs. Bronchiolitis')
+
