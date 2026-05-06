@@ -21,6 +21,7 @@ This project focuses on the analysis of a longitudinal dataset of Emergency Depa
 
 
 
+
 **Technical Methodology:**
 
 **Data Processing**:
@@ -44,6 +45,7 @@ The following methods were employed to derive insights from the data:
 5. Negative Binomial Distribution: Utilized to capture clumped seasonal spikes, aiding in capacity planning.
 
 **Key Findings & Inferences**:
+
 **Primary Vulnerability:** The infant group should be the primary focus when planning and allocating healthcare resources.
 
 **Strategic Planning:** Age and condition factors are critical for addressing emergency staffing schedules and future expansion plans.
