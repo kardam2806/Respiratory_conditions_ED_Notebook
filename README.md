@@ -98,7 +98,16 @@ The following methods were employed to derive insights from the data:
 
 **Seasonal Outbreaks:** Advanced strategies should be developed for conditions like Bronchitis and Tonsillitis, which exhibit sudden seasonal outbreaks during specific months of the year.
 
-Repository Structure
-Tidy_resp (6).ipynb: Main Jupyter notebook containing the analysis, visualizations, and statistical tests.
+
+**Concluding observations:**
+ANOVA results reveal the 'Age' as significant factor that drives ED visits.
+TWO-Way ANOVA proves 'Age' and 'Condition' as factors statistically significant that leads to ED visits.
+Spearman Corr. test and simple linear regression provides evidence for decreasing vulnerability with increase in age.
+Pairwise Tukey's test shows infants group had highest visits to ED when compared with other age groups.
+K-means Cluster analysis confirms the finding that condition prevalance is isolated rather than being consistent across all age groups except Acute URI's.
+Random Forest Feature further revealed 'age group' is slightly stronger predictor for ED visits suggesting demographic targeting when allocating resources.
+Negative Binomial Distribution results captures the clumped seasonal spikes typical of respiratory illness making it reliable for capacity planning.
+<img width="2161" height="511" alt="image" src="https://github.com/user-attachments/assets/e2ecf040-62cc-4766-8e07-64fc5a18ccee" />
+
 
 Raw_Data/: Directory containing the raw and tidy datasets used in the study.
