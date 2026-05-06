@@ -14,7 +14,8 @@ The project is hosted on GitHub and is designed to run in a Jupyter environment 
 **GitHub Repository**:
 URL: https://github.com/kardam2806/Respiratory_conditions_ED_Notebook
 
-**Original Data Source**: CDC website
+**Original Data Source**: Center for Disease Control and Prevention
+
 **Data Location:** The processed dataset is located in the Raw_Data/ directory at the following path:
 Raw_Data/tidy_respiratory_conditions.csv
 
