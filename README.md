@@ -1,4 +1,4 @@
-**Respiratory Conditions Analysis (2023-2026)
+**Emergency Department visits analysis by Respiratory conditions prevalence during 2023-2026.
 Machine Learning for Bioinformatics (BIFX546)**
 
 **Student:** Kardam Patel
@@ -6,7 +6,7 @@ Machine Learning for Bioinformatics (BIFX546)**
 **Instructor:** Prof. Sarangan Ravichandran
 
 **Project Overview**:
-This project focuses on the analysis of a longitudinal dataset of Emergency Department (ED) visits for respiratory conditions across the United States at the state level. The study tracks clinical encounters across six distinct age demographics from October 2023 to January 2026. The primary goal is to apply coding logic, data visualization, and statistical testing to understand respiratory health trends and demographic vulnerabilities.
+This project focuses on the analysis of a longitudinal dataset of Emergency Department (ED) visits for respiratory conditions across the United States at the state level. The study tracks clinical encounters across six distinct age demographics from October 2023 to January 2026. The primary goal is to apply coding logic, data visualization, and applyied statistics and machine learning models to understand respiratory health trends and demographic vulnerabilities.
 
 **Repository & Setup**:
 The project is hosted on GitHub and is designed to run in a Jupyter environment or Google Colab.
