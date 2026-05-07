@@ -54,7 +54,7 @@ Run the cells in order to perform data wrangling (converting longitudinal data t
 
 
 
-**Learning Objectives**:
+### Learning Objectives:
 
 
 **Demographic Vulnerability:** Determine if specific groups (e.g., infants) show consistent vulnerability across all respiratory conditions or if risk is isolated to specific pathogens.
@@ -68,7 +68,7 @@ Run the cells in order to perform data wrangling (converting longitudinal data t
 
 
 
-**Technical Methodology:**
+### Technical Methodology:
 
 **Data Processing**:
 **Source:** Data is retrieved from a tidy CSV format hosted on GitHub.
@@ -103,7 +103,7 @@ Run the cells in order to perform data wrangling (converting longitudinal data t
 
 
 
-**Key Findings & Inferences**:
+### Key Findings & Inferences:
 
 **Primary Vulnerability:** The infant group should be the primary focus when planning and allocating healthcare resources.
 
