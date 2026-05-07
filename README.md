@@ -77,18 +77,31 @@ Run the cells in order to perform data wrangling (converting longitudinal data t
 
 **Time-Series Preparation:** Data is resampled to monthly averages (ME) to smooth out weekly fluctuations for trend analysis.
 
-**Statistical & Machine Learning Analysis**:
-The following methods were employed to derive insights from the data:
 
-1. Spearman Correlation & Linear Regression: Used to provide evidence for decreasing vulnerability as age increases.
+### Statistical & Machine Learning Analysis: Derived Insights
 
-2. Pairwise Tukey's Test: Conducted to compare ED visit rates between age groups, revealing that the infant group has the highest frequency of visits.
+| Methodology | Objective | Key Findings & Insights |
+| :--- | :--- | :--- |
+| **Spearman Correlation & Linear Regression** | Trend Analysis | Established a statistically significant inverse relationship, showing **decreasing vulnerability as age increases**[cite: 1]. |
+| **Pairwise Tukey's Test** | Group Comparison | Confirmed that the **infant group** has a significantly higher frequency of ED visits than any other age demographic[cite: 1]. |
+| **K-means Cluster Analysis** | Demographic Profiling | Confirmed that condition prevalence is **isolated to specific groups**, with Acute URIs being the only cross-demographic exception[cite: 1]. |
+| **Random Forest Feature Selection** | Variable Importance | Validated **'Age Group'** as a primary and powerful predictor for forecasting ED visit patterns[cite: 1]. |
+| **Negative Binomial Distribution** | Seasonal Modeling | Successfully modeled **clumped seasonal spikes**, providing a robust statistical foundation for hospital capacity planning[cite: 1]. |
 
-3. K-means Cluster Analysis: Confirmed that most condition prevalence is isolated to specific groups rather than being consistent across all age demographics (with the exception of Acute URIs).
 
-4. Random Forest Feature Selection: Identified 'age group' as a strong predictor for ED visits.
+### 📊 Concluding Observations:
 
-5. Negative Binomial Distribution: Utilized to capture clumped seasonal spikes, aiding in capacity planning.
+| Methodology | Key Findings | Strategic Insight |
+| :--- | :--- | :--- |
+| **One-Way ANOVA** | Age is a statistically significant driver of ED visits. | Validates demographic-based triage protocols. |
+| **Two-Way ANOVA** | Age and Condition both act as significant factors leading to ED visits. | Accounts for interaction effects between age and health status. |
+| **Spearman & Regression** | Evidence shows vulnerability decreases as age increases. | Focus preventative care and outreach on younger demographics. |
+| **Pairwise Tukey’s Test** | Infants had the highest frequency of ED visits compared to all other groups. | Prioritize pediatric resource allocation and infant-specific capacity. |
+| **K-Means Clustering** | Condition prevalence is isolated by age (except for universal Acute URIs). | Tailor clinical services to age-specific clusters. |
+| **Random Forest** | Age Group is a stronger predictor for ED visits than clinical condition. | Prioritize demographic targeting for resource allocation. |
+| **Negative Binomial** | Captured clumped seasonal spikes typical of respiratory illnesses. | Reliable for capacity planning and surge management. |
+
+
 
 **Key Findings & Inferences**:
 
@@ -97,17 +110,3 @@ The following methods were employed to derive insights from the data:
 **Strategic Planning:** Age and condition factors are critical for addressing emergency staffing schedules and future expansion plans.
 
 **Seasonal Outbreaks:** Advanced strategies should be developed for conditions like Bronchitis and Tonsillitis, which exhibit sudden seasonal outbreaks during specific months of the year.
-
-
-**Concluding observations:**
-ANOVA results reveal the 'Age' as significant factor that drives ED visits.
-TWO-Way ANOVA proves 'Age' and 'Condition' as factors statistically significant that leads to ED visits.
-Spearman Corr. test and simple linear regression provides evidence for decreasing vulnerability with increase in age.
-Pairwise Tukey's test shows infants group had highest visits to ED when compared with other age groups.
-K-means Cluster analysis confirms the finding that condition prevalance is isolated rather than being consistent across all age groups except Acute URI's.
-Random Forest Feature further revealed 'age group' is slightly stronger predictor for ED visits suggesting demographic targeting when allocating resources.
-Negative Binomial Distribution results captures the clumped seasonal spikes typical of respiratory illness making it reliable for capacity planning.
-<img width="2161" height="511" alt="image" src="https://github.com/user-attachments/assets/e2ecf040-62cc-4766-8e07-64fc5a18ccee" />
-
-
-Raw_Data/: Directory containing the raw and tidy datasets used in the study.
