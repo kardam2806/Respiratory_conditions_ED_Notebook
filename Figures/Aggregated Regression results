@@ -1,0 +1,20 @@
+### 📈 Regression Analysis: Respiratory Condition vs. Age Group
+
+This analysis evaluates how age group (independent variable) predicts the frequency of specific respiratory conditions (dependent variable).
+
+| Respiratory Condition | R-squared | Coefficient (Age) | P-value | Significance |
+| :--- | :---: | :---: | :---: | :--- |
+| **Acute Upper Respiratory Infection** | 0.8905 | -2.9571 | **0.0047** | ⭐⭐⭐ High |
+| **Croup** | 0.7418 | -0.8179 | **0.0275** | ⭐⭐ Moderate |
+| **Bronchiolitis** | 0.6220 | -1.4200 | 0.0623 | ⚠️ Marginal |
+| **Other Lower Respiratory** | 0.6187 | -0.0193 | 0.0635 | ⚠️ Marginal |
+| **Respiratory Distress/Failure** | 0.4529 | +0.3736 | 0.1429 | Low |
+| **Bronchitis** | 0.3735 | +0.0507 | 0.1974 | Low |
+| **Pneumonia** | 0.3273 | +0.3143 | 0.2354 | Low |
+
+---
+
+### 🔍 Key Interpretations
+*   **Strongest Predictor:** Age group explains **89%** of the variance in *Acute Upper Respiratory Infections*. The negative coefficient (-2.95) confirms that as age increases, the frequency of visits significantly drops.
+*   **Pediatric Specifics:** *Croup* ($P = 0.027$) shows a significant negative correlation with age, reinforcing it as a primarily pediatric-driven ED condition.
+*   **Non-Significant Factors:** Conditions like *Sinus Infections* ($P = 0.25$) and *Tonsillitis* ($P = 0.37$) do not show a strong linear relationship with age in this dataset, suggesting these conditions are more evenly distributed across age groups.
