@@ -8,6 +8,16 @@
 **Project Overview**:
 This project focuses on the analysis of a longitudinal dataset of Emergency Department (ED) visits for respiratory conditions across the United States at the state level. The study tracks clinical encounters across six distinct age demographics from October 2023 to January 2026. The primary goal is to apply coding logic, data visualization, and applyied statistics and machine learning models to understand respiratory health trends and demographic vulnerabilities.
 
+**Project Structure**
+```text
+Respiratory_conditions_ED_Notebook/
+├── notebooks/        # Jupyter/Google Colab notebooks (Tidy_resp (6).ipynb)
+├── Raw_Data/         # Source CSV data (tidy_respiratory_conditions.csv)
+├── Statistics/       # Generated plots, statistical tables, and figures
+├── requirements.txt  # Minimal package list (pandas, openpyxl,matplotlib, seaborn, scipy, scikit-learn.)
+└── README.md         # Project documentation and analysis summary
+```
+
 **Repository & Setup**:
 The project is hosted on GitHub and is designed to run in a Jupyter environment or Google Colab.
 
@@ -39,7 +49,7 @@ The script will set the working directory to /content/drive/MyDrive/Respiratory_
 Ensure you have the following Python packages installed:
 
 Bash
-pip install pandas openpyxl matplotlib seaborn scipy scikit-learn
+pip install pandas, openpyxl, matplotlib, seaborn, scipy, scikit-learn
 
 
 **Execution:**
