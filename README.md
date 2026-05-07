@@ -1,5 +1,5 @@
-**Emergency Department visits analysis by Respiratory conditions prevalence during 2023-2026.
-Machine Learning for Bioinformatics (BIFX546)**
+### Predicting Emergency Department Surge: A Longitudinal Study of Age-Specific Respiratory Trends
+**Course**: **Machine Learning for Bioinformatics (BIFX546)**
 
 **Student:** Kardam Patel
 
