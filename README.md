@@ -99,6 +99,26 @@ Run the cells in order to perform data wrangling (converting longitudinal data t
 | **Negative Binomial Distribution** | Seasonal Modeling | Successfully modeled **clumped seasonal spikes**, providing a robust statistical foundation for hospital capacity planning[cite: 1]. |
 
 
+## Visualizations and Key Results
+All plots generated during the analysis are stored in the `results/` directory. They are categorized as follows:
+
+### 📈 Temporal & Trend Analysis
+* **ED visits throughout the time period**: Global view of visit volume from 2023 to 2026.
+* **Acute Upper Respiratory Infection Over the Year**: Seasonal trend tracking for the most frequent condition.
+* **Bronchiolitis Rates Over Time**: Longitudinal incidence rates specifically for Bronchiolitis.
+
+### 📊 Comparative & Demographic Insights
+* **Heatmap of Disease Incidence by Age group**: A density map showing which conditions hit specific age groups hardest.
+* **Cat Plot**: Categorical distribution of visit percentages across demographics.
+* **Correlation Matrix**: Visualization of the relationships between different respiratory conditions.
+* **Correlation between difference disease conditions**: Detailed view of co-occurrence patterns.
+
+### 🔬 Statistical & Machine Learning Results
+* **Post-HOC Tukey's test**: Pairwise significance testing between age groups (Identifying Infant vulnerability).
+* **Cluster analysis**: K-means output showing the isolation of conditions within demographics.
+* **Aggregated Regression results**: Evidence of the inverse relationship between age and vulnerability.
+  
+
 ### 📊 Concluding Observations:
 
 | Methodology | Key Findings | Strategic Insight |
